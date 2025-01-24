@@ -3,17 +3,66 @@
     <head>
       <title>George Ayoub's links</title>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         * {
           border: 1px red dashed;
         }
+        html {
+          min-height: 100%;
+        }
+        body {
+          padding: 40px 0;
+          min-height: 100%;
+          background: linear-gradient(#5B3C2D, #FF9913);
+          color: white;
+          a{
+            color: hotpink;
+        }
+        .link {
+          background-color:rgba(227, 173, 115, 0.8);
+        }
+        .avatar-image{
+          width: 128px;
+          height: 128px;
+          object-fit: cover;
+          border-radius: 128px;
+          border: purple 5px solid;
+        }
+        .thumbnail{
+          height: 48px;
+          width:48px;
+          border-radius:48px;
+          object-fit: cover;
+        }
+        .main-container{
+          max-width: 640px;
+          margin: auto;
+        }
+        .link{
+          margin-bottom: 20px;
+        }
+        .image-row{
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .name-row{
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .social-icons-row{
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: space-around;
+        }
+        
       </style>
     </head>
     <body>
       <main>
-        <div class="main-container"></div>
+        <div class="main-container">
         <div class="image-row">
-          <img src="LIphoto.jpg">
+          <img class= "avatar-image" src="LIphoto.jpg" alt="George Ayoub's headshot">
         </div>
         <div class="name-row">
           <p>George Ayoub</p>
@@ -25,8 +74,12 @@
         </div>
         <div class="links-row">
           <div class="link">
-          <img src="GeorgeLogo.png" alt="logo">
+          <img class="thumbnail" src="GeorgeLogo.png" alt="logo">
           <a href="https://freakboygeorge.com/" target="_blank">Portfolio</a>
+          </div>
+          <div class="link">
+            <img class="thumbnail" src="musix.png" alt="music logo">
+            <a href="https://on.soundcloud.com/s9gKdsrGJ6K1Z94y6" target="_blank">My Music</a>
           </div>
           
         </div>
